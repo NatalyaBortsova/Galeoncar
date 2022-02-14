@@ -1,0 +1,358 @@
+.conditions {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180.3deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%);
+        ;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 80px;
+        text-align: center;
+
+        @include r(1000) {
+            margin-bottom: 60px;
+        }
+
+        @include r(410) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+
+        @include r(768) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__item {
+        max-width: 870px;
+    }
+
+    &__button {
+        font-size: 18px;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100%;
+        text-align-last: left;
+        border-bottom: 1px solid rgba($white, 0.15);
+        padding: 30px 0 14px;
+        position: relative;
+
+        @include r(410) {
+            font-size: 14px;
+        }
+
+        &[aria-expanded="true"] {
+            .conditions__icon {
+
+                &::before {
+                    transform: rotate(-45deg);
+                }
+
+                &::after {
+                    transform: rotate(45deg);
+                }
+            }
+
+            +.description {
+                opacity: 1;
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+
+        &::before {
+            @include pseudo;
+            bottom: 0;
+            right: 7px;
+            width: 10px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: $white;
+            transition: transform 0.5s ease-in-out;
+
+            @include r(410) {
+                width: 8px;
+                height: 1px;
+                right: 6px;
+            }
+        }
+
+        &::after {
+            @include pseudo;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: $white;
+            transition: transform 0.5s ease-in-out;
+
+            @include r(410) {
+                width: 8px;
+                height: 1px;
+            }
+        }
+
+        @include r(410) {
+            right: 0;
+        }
+    }
+
+    .description {
+        padding: 24px 0 0 23px;
+        opacity: 0;
+        width: 95%;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5 ease-in-out, max-height 0.5 ease-in-out;
+
+        &__item {
+            position: relative;
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+            letter-spacing: 0.05em;
+
+            &::before {
+                @include pseudo;
+                width: 12px;
+                height: 2px;
+                background-color: $white;
+                top: 10px;
+                left: -22px;
+
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+
+                @include r(1000) {
+                    margin-bottom: 14px;
+                }
+            }
+
+            @include r(410) {
+                font-size: 14px;
+            }
+
+            @include r(320) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .registration {
+        padding: 43px 55px;
+        background-color: #232731;
+        max-width: 391px;
+        min-height: 658px;
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid $accend;
+    
+        @include r(1000) {
+            margin-right: -100px;
+        }
+
+        @include r(768) {
+            max-width: 721px;
+            min-height: 237px;
+            padding: 32px 43px 25px;
+            margin: 0 -45px 42px 0;
+        }
+
+        @include r(595) {
+            margin: 0 -100px 24px 0;
+        }
+
+        &__list {
+            @include r(768) {
+                column-count: 3;
+                column-gap: 24px;
+            }
+
+            @include r(595) {
+                column-count: 2;
+                column-gap: 24px;
+            }
+
+            @include r(410) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+
+        &__item {
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 42px;
+
+                @include r(768) {
+                    margin-bottom: 27px;
+                }
+
+                @include r(410) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &:nth-child(3),
+            &:nth-child(5) {
+                @include r(768) {
+                    margin-bottom: 77px;
+                }
+
+                @include r(595) {
+                    margin-bottom: 27px;
+                }
+            }
+
+            &::before {
+                @include pseudo;
+                width: 24px;
+                height: 24px;
+                left: 0;
+                top: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &_docs {
+                &::before {
+                    background-image: url('../../images/icons/docs.svg');
+                }
+
+                &::after {
+                    @include r(768) {
+                        @include pseudo;
+                        width: 183px;
+                        height: 1px;
+                        right: -95px;
+                        top: 91px;
+                        background-color: $white;
+                        transform: rotate(90deg);
+                    }
+
+                    @include r(595) {
+                        width: 216px;
+                        top: 100px;
+                        right: -111px;
+                    }
+                }
+
+
+            }
+
+            &_year {
+                &::before {
+                    background-image: url('../../images/icons/year.svg');
+                }
+            }
+
+            &_experience {
+                &::before {
+                    background-image: url('../../images/icons/clock.svg');
+                }
+
+                &::after {
+                    @include r(768) {
+                        @include pseudo;
+                        width: 183px;
+                        height: 1px;
+                        right: -95px;
+                        top: 91px;
+                        background-color: $white;
+                        transform: rotate(90deg);
+                    }
+
+                    @include r(595) {
+                        display: none;
+                    }
+                }
+
+            }
+
+            &_terms {
+                &::before {
+                    background-image: url('../../images/icons/renttime.svg');
+                }
+            }
+
+            &_price {
+                &::before {
+                    background-image: url('../../images/icons/price.svg');
+                }
+            }
+
+            &_manage {
+                &::before {
+                    background-image: url('../../images/icons/manage.svg');
+                }
+            }
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-bottom: 8px;
+            padding-left: 8px;
+            padding-left: 32px;
+            text-transform: uppercase;
+
+            @include r(595) {
+                font-size: 14px;
+            }
+        }
+
+        &__text {
+            display: block;
+            font-size: 16px;
+            line-height: 1.6;
+            letter-spacing: 0.05em;
+            padding-left: 32px;
+
+            @include r(595) {
+                font-size: 14px;
+            }
+        }
+    }
+}

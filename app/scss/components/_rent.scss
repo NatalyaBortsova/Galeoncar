@@ -1,0 +1,86 @@
+.rent {
+    background-color: $black;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 80px;
+        text-align: center;
+
+        @include r(1000) {
+            margin-bottom: 60px;
+        }
+
+        @include r(410) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        @include r(768) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+        }
+    }
+
+    &__block {
+        position: relative;
+    }
+
+
+    &__image {
+        max-width: 660px;
+        height: 379px;
+
+        @include r(1280) {
+            max-width: 427px;
+            height: 244px;
+        }
+
+        @include r(1000) {
+            max-width: 333px;
+            height: 190px;
+        }
+
+        @include r(768) {
+            max-width: 456px;
+            height: 260px;
+        }
+
+        @include r(410) {
+            max-width: 373px;
+            height: 213px;
+        }
+
+        @include r(320) {
+            max-width: 281px;
+            height: 160px;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 40px;
+        left: 30%;
+        display: block;
+
+        @include r(1280) {
+            bottom: 25px;
+        }
+
+        @include r(410) {
+            left: 20%;
+        }
+
+        @include r(320) {
+            left: 10%;
+            bottom: 15px;
+        }
+    }
+}

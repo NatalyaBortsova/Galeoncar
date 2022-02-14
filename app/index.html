@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeoncar - аренда премиум Авто</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+    <div class="container">
+        <nav class="menu">
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Мобильное меню</span>
+            </button>
+            <ul class="menu__list burger__menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в эпстор</span>
+                    <a class="menu__link" href="#">
+                        <svg class="menu__image payment__image">
+                            <use xlink:href="images/sprite.svg#appstore"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в гуглплей</span>
+                    <a class="menu__link" href="#">
+                        <img class="menu__image payment__image" src="../../images/icons/googleplay.svg" alt="гуглплей">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="291" height="91">
+                </a>
+            </div>
+            <div class="menu__inner">
+
+                <div class="menu__top">
+
+                    <ul class="menu__list menu__list_hidden">
+                        <li class="menu__item active">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="autopark.html"  data-where="anchor">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#rent"  data-where="anchor">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="business.html">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="authorization.html">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__list social">
+                        <li class="social__item">
+                            <span class="sr-only">перейти в фейсбук</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в инстаграмм</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вконтакте</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вайбер</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__bottom">
+                    <a class="menu__phone" href="tel:389958883094">(095) 888-30-94</a>
+                    <ul class="menu__list payment">
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в эпстор</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в гуглплей</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+    
+    <main class="main">
+      <section class="hero" style="background-image: url('../../images/bg/hero-bg.jpg');">
+    <div class="container">
+
+        <h1 class="hero__title">
+            Аренда
+            <span class="hero__subtitle">
+                Премиум автомобилей
+            </span>
+        </h1>
+
+        <span class="sr-only">Галлерея премиум автомобилей</span>
+        <div class="hero__slider swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="hero__image" src="../../images/hero/1.jpg" alt="Премиум автомобиль" width="456"
+                        height="407">
+                </div>
+                <div class="swiper-slide">
+                    <img class="hero__image" src="../../images/hero/2.jpg" alt="Премиум автомобиль" width="456"
+                        height="407">
+                </div>
+                <div class="swiper-slide">
+                    <img class="hero__image" src="../../images/hero/3.jpg" alt="Премиум автомобиль" width="456"
+                        height="407">
+                </div>
+                <div class="swiper-slide">
+                    <img class="hero__image" src="../../images/hero/4.jpg" alt="Премиум автомобиль" width="456"
+                        height="407">
+                </div>
+                <div class="swiper-slide">
+                    <img class="hero__image" src="../../images/hero/5.jpg" alt="Премиум автомобиль" width="456"
+                        height="407">
+                </div>                
+
+            </div>
+        </div>
+</section>
+      <section class="rent section" id="rent">
+    <h2 class="rent__title title">
+        виды
+    </h2>
+    <h3 class="rent__subtitle subtitle">
+        аренды
+    </h3>
+    <div class="rent__content">
+        <div class="rent__block">
+            <img class="rent__image" src="../../images/rent/1.jpg" alt="аренда автомобиля с водителем" width="660"
+                height="379">
+            <a class="rent__button button" href="driver.html">
+                с водителем
+            </a>
+        </div>
+        <div class="rent__block">
+            <img class="rent__image" src="../../images/rent/2.jpg" alt="аренда автомобиля для особых целей" width="660"
+                height="379">
+            <a class="rent__button button" href="special.html">
+                для особых целей
+            </a>
+        </div>
+        <div class="rent__block">
+            <img class="rent__image" src="../../images/rent/3.jpg" alt="аренда автомобиля без водителя" width="660"
+                height="379">
+            <a class="rent__button button" href="nodriver.html">
+                без водителя
+            </a>
+        </div>
+    </div>
+</section>
+      <section class="autopark section" id="autopark">
+    <h2 class="autopark__subtitle subtitle">
+        автопарк
+    </h2>
+
+    <div class="autopark__top">
+        <h3 class="autopark__title title">
+            Премиум
+        </h3>
+        <h3 class="autopark__title title">
+            Бизнес
+        </h3>
+        <h3 class="autopark__title title">
+            Спорт
+        </h3>
+    </div>
+
+    <span class="sr-only">галлерея машин</span>
+    <div class="autopark__slider swiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+</section>
+      <section class="conditions section" style="background-image: url('../../images/bg/condition-bg.jpg');">
+    <div class="container">
+        <h2 class="conditions__title title">
+            условия
+        </h2>
+        <h3 class="conditions__subtitle subtitle">
+            аренды
+        </h3>
+
+        <div class="conditions__content">
+
+            <ul class="conditions__list">
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-1" aria-expanded="false">
+                        бронирование
+                        <span class="sr-only">открыть информацию о бронировании автомобиля</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Для оформления заказа необходимо предъявить минимум документов: паспорт, ИНН, водительские
+                            права.
+                        </li>
+                        <li class="description__item">
+                            Можно оформить предварительный
+                            заказ и произвести его оплату онлайн. Подача авто в указанное клиентом место выполняется
+                            точно в срок. Клиент получает транспортное средство в исправном состоянии и с заправленным
+                            баком. За дополнительную стоимость машина осна Допускается установка в салоне детского
+                            кресла.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-2" aria-expanded="false">
+                        правила аренды
+                        <span class="sr-only">открыть список правил аренды</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Эксплуатировать автомобиль только в пределах Киева. Выезд за пределы ЛО согласовывается
+                            индивидуально.
+                        </li>
+                        <li class="description__item">
+                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                        </li>
+                        <li class="description__item">
+                            Не передавать управление другому человеку без оформления на него договора аренды. При
+                            желании вы можете бесплатно внести второго водителя в договор аренды.
+                        </li>
+                        <li class="description__item">
+                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                        </li>
+                        <li class="description__item">
+                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                        </li>
+                        <li class="description__item">
+                            Соблюдать правила парковки
+                        </li>
+                        <li class="description__item">
+                            Соблюдать чистоту и не курить в салоне автомобиля.
+                        </li>
+                        <li class="description__item">
+                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с
+                            салоном автомобиля.
+                        </li>
+                        <li class="description__item">
+                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного
+                            осмотра.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-3" aria-expanded="false">
+                        обеспечительный платёж
+                        <span class="sr-only">открыть информацию об обеспечительном платеже</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Оплата наличными денежными средствами;
+                        </li>
+                        <li class="description__item">
+                            Оплата по банковским реквизитам Арендодателя;
+                        </li>
+                        <li class="description__item">
+                            Оплата банковской картой (МИР, VISA International, Mastercard Worldwide, JCB) по терминалу
+                            оплаты;
+                        </li>
+                        <li class="description__item">
+                            Оплата банковской картой по статической ссылке
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-4" aria-expanded="false">
+                        страхование
+                        <span class="sr-only">открыть информацию о страховании</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            При аренде автомобиля в нашей компании Вы получаете полис обязательного страхования по ОСАГО
+                            - БЕСПЛАТНО!
+                        </li>
+                        <li class="description__item">
+                            В дороге любого водителя могут поджидать различные неожиданности. Страхование – лучший
+                            способ обезопасить себя от возможных финансовых потерь и лишних волнений.
+                        </li>
+                        <li class="description__item">
+                            Мы готовы помочь вам расширить действие страховки – по вашему желанию, дополнительно
+                            оформляется страховка от угона и повреждений машины. Полная страховка выгодна тем, что она
+                            освобождает арендатора от покрытия различных убытков и одновременно позволяет брать машину
+                            на прокат без залога.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-4" aria-expanded="false">
+                        доставка и возврат
+                        <span class="sr-only">открыть информацию о доставке и возврате</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Заложите достаточно времени на поездку до пункта возврата. В случае опоздания снимается 5%
+                            от суммы залога.
+                        </li>
+                        <li class="description__item">
+                            Вы получаете машину с полным баком и должны заправить ее до полного бака непосредственно
+                            перед возвратом.
+                        </li>
+                        <li class="description__item">
+                            Сфотографируйте индикатор уровня топлива и пробега. Затем сделайте снимки передней, задней и
+                            боковых частей автомобиля снаружи.
+                        </li>
+                        <li class="description__item">
+                            Заберите все свои вещи. Проверьте багажник, бардачок, дверные карманы, области под сидениями
+                            и карманы на спинках кресел.
+                        </li>
+                        <li class="description__item">
+                            Подойдите на ресепшн, со всеми документами, которые вы получили при аренде автомобиля для
+                            оформления возврата.
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="conditions__block registration">
+                <ul class="registration__list">
+                    <li class="registration__item registration__item_docs">
+                        <span class="registration__title">
+                            документы
+                        </span>
+                        <span class="registration__text">
+                            Паспорт и водительское
+                            удостоверение
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_year">
+                        <span class="registration__title">
+                            возраст
+                        </span>
+                        <span class="registration__text">
+                            от 21 года
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_experience">
+                        <span class="registration__title">
+                            стаж
+                        </span>
+                        <span class="registration__text">
+                            не менее 2 лет
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_terms">
+                        <span class="registration__title">
+                            срок аренды
+                        </span>
+                        <span class="registration__text">
+                            от 1 часа
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_price">
+                        <span class="registration__title">
+                            цена
+                        </span>
+                        <span class="registration__text">
+                            фиксированная
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_manage">
+                        <span class="registration__title">
+                            управление
+                        </span>
+                        <span class="registration__text">
+                            возможна передача
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+      <section class="feedback section">
+    <div class="container">
+        <h2 class="feedback__title title">
+            отзывы
+        </h2>
+        <h3 class="feedback__subtitle subtitle">
+            наших клиентов
+        </h3>
+
+        <ul class="feedback__list">
+            <li class="feedback__item">
+                <img class="feedback__photo" src="../../images/feedback/1.png" alt="фото клиента" width="58"
+                    height="58">
+                <div class="feedback__box">
+                    <span class="feedback__name">
+                        Евгений
+                    </span>
+                    <span class="feedback__city">
+                        Киев
+                    </span>
+                </div>
+            </li>
+
+            <li class="feedback__item">
+                <img class="feedback__photo" src="../../images/feedback/2.png" alt="фото клиента" width="58"
+                    height="58">
+                <div class="feedback__box">
+                    <span class="feedback__name">
+                        Александр
+                    </span>
+                    <span class="feedback__city">
+                        Киев
+                    </span>
+                </div>
+            </li>
+
+            <li class="feedback__item">
+                <img class="feedback__photo" src="../../images/feedback/3.png" alt="фото клиента" width="58"
+                    height="58">
+                <div class="feedback__box">
+                    <span class="feedback__name">
+                        Вячеслав
+                    </span>
+                    <span class="feedback__city">
+                        Киев
+                    </span>
+                </div>
+            </li>
+
+            <li class="feedback__item">
+                <img class="feedback__photo" src="../../images/feedback/4.png" alt="фото клиента" width="58"
+                    height="58">
+                <div class="feedback__box">
+                    <span class="feedback__name">
+                        Елена
+                    </span>
+                    <span class="feedback__city">
+                        Киев
+                    </span>
+                </div>
+            </li>
+            <li class="feedback__item">
+                <img class="feedback__photo" src="../../images/feedback/5.png" alt="фото клиента" width="58"
+                    height="58">
+                <div class="feedback__box">
+                    <span class="feedback__name">
+                        Евгений
+                    </span>
+                    <span class="feedback__city">
+                        Киев
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="feedback__content">
+
+            <div class="feedback__slider swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span class="feedback__slider-name">
+                            Евгений
+                        </span>
+                        <div class="feedback__slider-text">
+                            <p>
+                                Хочу порекомендовать данную компанию!
+                                В этом году у них 3 раза арендовал машину для поездок из Киева в Харьков и Черниговскую
+                                область на выходные (на 3-4 суток).
+                                Машины исправные, в хорошем состоянии без каких-либо нареканий (бронировал эконом класс,
+                                автомат, бензин).
+                                Сервис — отличный, без каких-либо подводных камней и прочего обмана.
+                                Galeoncar огромное спасибо!
+                                Всем рекомендую!
+                            </p>
+                        </div>
+
+                        <div class="feedback__slider-bottom">
+                            <div class="feedback__slider-rate">
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                            </div>
+                            <a class="feedback__slider-link" href="#">
+                                Подробнее...
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="feedback__slider-name">
+                            Александр
+                        </span>
+                        <div class="feedback__slider-text">
+                            <p>
+                                Хочу порекомендовать данную компанию!
+                                В этом году у них 3 раза арендовал машину для поездок из Киева в Харьков и Черниговскую
+                                область на выходные (на 3-4 суток).
+                                Машины исправные, в хорошем состоянии без каких-либо нареканий (бронировал эконом класс,
+                                автомат, бензин).
+                                Сервис — отличный, без каких-либо подводных камней и прочего обмана.
+                                Galeoncar огромное спасибо!
+                                Всем рекомендую!
+                            </p>
+                        </div>
+
+                        <div class="feedback__slider-bottom">
+                            <div class="feedback__slider-rate">
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                            </div>
+                            <a class="feedback__slider-link" href="#">
+                                Подробнее...
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="feedback__slider-name">
+                            Вячеслав
+                        </span>
+                        <div class="feedback__slider-text">
+                            <p>
+                                Хочу порекомендовать данную компанию!
+                                В этом году у них 3 раза арендовал машину для поездок из Киева в Харьков и Черниговскую
+                                область на выходные (на 3-4 суток).
+                                Машины исправные, в хорошем состоянии без каких-либо нареканий (бронировал эконом класс,
+                                автомат, бензин).
+                                Сервис — отличный, без каких-либо подводных камней и прочего обмана.
+                                Galeoncar огромное спасибо!
+                                Всем рекомендую!
+                            </p>
+                        </div>
+
+                        <div class="feedback__slider-bottom">
+                            <div class="feedback__slider-rate">
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                            </div>
+                            <a class="feedback__slider-link" href="#">
+                                Подробнее...
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="feedback__slider-name">
+                            Елена
+                        </span>
+                        <div class="feedback__slider-text">
+                            <p>
+                                Хочу порекомендовать данную компанию!
+                                В этом году у них 3 раза арендовал машину для поездок из Киева в Харьков и Черниговскую
+                                область на выходные (на 3-4 суток).
+                                Машины исправные, в хорошем состоянии без каких-либо нареканий (бронировал эконом класс,
+                                автомат, бензин).
+                                Сервис — отличный, без каких-либо подводных камней и прочего обмана.
+                                Galeoncar огромное спасибо!
+                                Всем рекомендую!
+                            </p>
+                        </div>
+
+                        <div class="feedback__slider-bottom">
+                            <div class="feedback__slider-rate">
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                            </div>
+                            <a class="feedback__slider-link" href="#">
+                                Подробнее...
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="feedback__slider-name">
+                            Евгений
+                        </span>
+                        <div class="feedback__slider-text">
+                            <p>
+                                Хочу порекомендовать данную компанию!
+                                В этом году у них 3 раза арендовал машину для поездок из Киева в Харьков и Черниговскую
+                                область на выходные (на 3-4 суток).
+                                Машины исправные, в хорошем состоянии без каких-либо нареканий (бронировал эконом класс,
+                                автомат, бензин).
+                                Сервис — отличный, без каких-либо подводных камней и прочего обмана.
+                                Galeoncar огромное спасибо!
+                                Всем рекомендую!
+                            </p>
+                        </div>
+
+                        <div class="feedback__slider-bottom">
+                            <div class="feedback__slider-rate">
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                                <span class="feedback__slider-star"></span>
+                            </div>
+                            <a class="feedback__slider-link" href="#">
+                                Подробнее...
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="feedback__video">
+                <button class="feedback__video-play" href="#" type="button"></button>
+                <video class="feedback__video-desktop" width="972" height="421" controls crossorigin playsinline
+                    poster="../../images/feedback/video-img.jpg">
+                    <source src="../../images/feedback/video.mp4" type="video/mp4">
+                </video>                
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+      <section class="contact" id="contacts">
+    <div class="map">
+
+        <iframe class="map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5025729887175!2d30.471444816076996!3d50.4503653794755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce842ed21b81%3A0x4527fb61e2632a66!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAyMCwg0JrQuNC10LIsIDA0MTE2!5e0!3m2!1sru!2sua!4v1644238803496!5m2!1sru!2sua"
+            width="1920" height="615" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="modal">
+        <div class="modal__heading">
+            <h2 class="modal__title">
+                контакты
+            </h2>
+            <button class="modal__close" type="button">
+            </button>
+        </div>
+        <span class="modal__text">
+            Поможем подобрать наилучший вариант
+        </span>
+        <address class="address">
+            <ul class="address__list">
+                <li class="address__item address__item_location">
+                    Наш адрес: <span class="address__item-location">Киев, ул. Победы, 20</span>
+                </li>
+                <li class="address__item address__item_email">
+                    Наша почта: <a class="address__item-email"
+                        href="meilto:galeoncar@internet.ua">galeoncar@internet.au</a>
+                </li>
+            </ul>
+        </address>
+
+        <div class="order">
+            <a class="order__button button">заказать машину</a>
+            <div class="order__connect">
+                <a class="order__phone" href="tel:0958883094">(095) 888-30-94</a>
+                <span class="order__text">
+                    Звоните или оставляйте заявку
+                </span>
+            </div>
+        </div>
+
+        <div class="modal__bottom">
+            <span class="modal__bottom-text">
+                Мы в соц сетях:
+            </span>
+            <ul class="social">
+                <li class="social__item">
+                    <span class="sr-only">перейти в фейсбук</span>
+                    <a class="social__link" href="#">
+                        <svg class="social__image">
+                            <use xlink:href="images/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <span class="sr-only">перейти в инстаграмм</span>
+                    <a class="social__link" href="#">
+                        <svg class="social__image">
+                            <use xlink:href="images/sprite.svg#insta"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <span class="sr-only">перейти в вконтакте</span>
+                    <a class="social__link" href="#">
+                        <svg class="social__image">
+                            <use xlink:href="images/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <span class="sr-only">перейти в вайбер</span>
+                    <a class="social__link" href="#">
+                        <svg class="social__image">
+                            <use xlink:href="images/sprite.svg#viber"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section> 
+      <div class="card section" style="background-image: url('../../images/special/bg/bg-1.jpg');">
+    <div class="container">
+
+        <h2 class="card__title title">
+            трансфер
+        </h2>
+        <h3 class="card__subtitle subtitle">
+            из аэропорта
+        </h3>
+
+        <div class="card__inner">
+
+            <div class="card__text">
+                <h4 class="card__text-title">
+                    в стоимость услуги входит:
+                </h4>
+                <ul class="card__text-list">
+                    <li class="card__text-item">Встреча в зоне ожидания с именной табличкой</li>
+                    <li class="card__text-item">Подача автомобиля с персональным водителем в аэропорт</li>
+                    <li class="card__text-item">Погрузка багажа в автомобиль</li>
+                    <li class="card__text-item">Вы заранее можете обсудить весь маршрут и выразить дополнительные
+                        пожелания к поездке с персональным менеджером</li>
+                    <li class="card__text-item">В стоимость услуги входит 3 часа аренды автомобиля</li>
+                </ul>
+            </div>
+
+            <div class="card__content">
+                <img class="card__image" src="../../images/special/1.jpg" alt="трансфер из аэропорта" width="1193"
+                    height="600">
+            </div>
+
+        </div>
+
+    </div>
+    <span class="sr-only">галлерея машин</span>
+
+    <div class="slider swiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Mercedes A45 AMG
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/yellow-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Хэтчбек</li>
+                        <li class="slider__item slider__item_type">2.0l Turbo</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Lamborghini Gallardo
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/green-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">5.2l V10</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Ford Mustang 2.3 EcoBoost
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/black-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">2.3l EcoBoost</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    BMW M2 Competition
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/white-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">3.0l Turbo</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Mercedes A45 AMG
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/yellow-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Хэтчбек</li>
+                        <li class="slider__item slider__item_type">2.0l Turbo</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Lamborghini Gallardo
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/green-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">5.2l V10</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    Ford Mustang 2.3 EcoBoost
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/black-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">2.3l EcoBoost</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <h5 class="slider__title">
+                    BMW M2 Competition
+                </h5>
+                <div class="slider__box">
+                    <div class="slider__image">
+                        <img class="slider__image" src="../../images/special/slider/white-car.png" alt="галлерея машин"
+                            width="203" height="94">
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item_car">Купе</li>
+                        <li class="slider__item slider__item_type">3.0l Turbo</li>
+                        <li class="slider__item slider__item_volume">Полный</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+
+</div>    
+    </main>
+
+    <footer class="footer">
+
+    <div class="footer__top">
+
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo-footer.svg" alt="логотип" width="141" height="141">
+                </a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a class="menu__link" href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#autopark" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html" data-where="anchor">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer__bottom">
+        <span class="footer__copy">
+            2022 © galeoncar
+        </span>
+        <span class="footer__politics">
+            Политика конфиденциальности
+        </span>
+        <ul class="social">
+            <li class="social__item">
+                <span class="sr-only">перейти в фейсбук</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в инстаграмм</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вконтакте</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вайбер</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

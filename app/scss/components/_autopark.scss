@@ -1,0 +1,175 @@
+.autopark {
+
+    text-align: center;
+
+    &__subtitle {
+        margin-bottom: 42px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        &:not(:last-child) {
+            border-right: 1px solid $white;
+        }
+
+        &:nth-child(1) {
+            padding-right: 24px;
+        }
+
+        &:nth-child(2) {
+            padding: 0 24px;
+        }
+
+        &:nth-child(3) {
+            padding-left: 24px;
+        }
+    }
+
+    &__slider {
+        padding-top: 58px;
+        max-width: 1920px;
+        margin: 0 auto;
+
+        @include r(768) {
+            padding-top: 49px;
+        }
+
+        @include r(410) {
+            padding-top: 42px;
+        }
+
+        @include r(320) {
+            padding-top: 24px;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+        max-width: 660px;
+        height: 379px;
+
+        @include r(1470) {
+            max-width: 490px;
+            height: 292px;
+        }
+
+        @include r(1280) {
+            max-width: 427px;
+            height: 245px;
+        }
+
+        @include r(1000) {
+            max-width: 333px;
+            height: 199px;
+        }
+
+        @include r(410) {
+            max-width: 373px;
+            height: 213px;
+        }
+
+        @include r(320) {
+            max-width: 281px;
+            height: 160px;
+        }
+
+        .autopark__button {
+            position: absolute;
+            bottom: 40px;
+            left: 27%;
+            display: block;
+
+            @include r(1280) {
+                bottom: 25px;
+                left: 20%;
+            }
+
+            @include r(992) {
+                left: 0;
+                width: 100%;
+                bottom: 0;
+            }
+
+            @include r(500) {
+                bottom: 25px;
+                left: 13%;
+                max-width: 222px;
+
+            }
+
+            @include r(410) {
+                max-width: 205px;
+            }
+
+            @include r(320) {
+                left: 3%;
+            }
+        }
+    }
+
+    .swiper-scrollbar {
+        background-color: rgba($white, 0.3);
+        top: 10px;
+        width: 60px;
+        left: 88vw;
+
+        @include r(1000) {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 3%;
+
+        @include r(1280) {
+            top: 4%;
+        }
+
+        @include r(1000) {
+            top: 5%;
+        }
+    }
+
+    .swiper-button-next {
+        right: 2vw;
+    }
+
+    .swiper-button-prev {
+        left: 82vw;
+
+        @include r(1280) {
+            left: 83vw;
+        }
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        background-image: url('../../images/icons/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 12px;
+        color: $white;
+        font-size: 0;
+
+        @include r(1000) {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev:after {
+        transform: rotate(180deg);
+        left: 85%;
+    }
+
+    &__image {
+        height: 100%;
+    }
+
+}

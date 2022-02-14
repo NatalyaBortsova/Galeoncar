@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условия аренды автомобилей в Galeoncar</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+    <div class="container">
+        <nav class="menu">
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Мобильное меню</span>
+            </button>
+            <ul class="menu__list burger__menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в эпстор</span>
+                    <a class="menu__link" href="#">
+                        <svg class="menu__image payment__image">
+                            <use xlink:href="images/sprite.svg#appstore"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в гуглплей</span>
+                    <a class="menu__link" href="#">
+                        <img class="menu__image payment__image" src="../../images/icons/googleplay.svg" alt="гуглплей">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="291" height="91">
+                </a>
+            </div>
+            <div class="menu__inner">
+
+                <div class="menu__top">
+
+                    <ul class="menu__list menu__list_hidden">
+                        <li class="menu__item active">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="autopark.html"  data-where="anchor">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#rent"  data-where="anchor">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="business.html">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="authorization.html">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__list social">
+                        <li class="social__item">
+                            <span class="sr-only">перейти в фейсбук</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в инстаграмм</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вконтакте</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вайбер</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__bottom">
+                    <a class="menu__phone" href="tel:389958883094">(095) 888-30-94</a>
+                    <ul class="menu__list payment">
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в эпстор</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в гуглплей</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+        
+        <main class="main">         
+          <section class="conditions section" style="background-image: url('../../images/bg/condition-bg.jpg');">
+    <div class="container">
+        <h2 class="conditions__title title">
+            условия
+        </h2>
+        <h3 class="conditions__subtitle subtitle">
+            аренды
+        </h3>
+
+        <div class="conditions__content">
+
+            <ul class="conditions__list">
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-1" aria-expanded="false">
+                        бронирование
+                        <span class="sr-only">открыть информацию о бронировании автомобиля</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Для оформления заказа необходимо предъявить минимум документов: паспорт, ИНН, водительские
+                            права.
+                        </li>
+                        <li class="description__item">
+                            Можно оформить предварительный
+                            заказ и произвести его оплату онлайн. Подача авто в указанное клиентом место выполняется
+                            точно в срок. Клиент получает транспортное средство в исправном состоянии и с заправленным
+                            баком. За дополнительную стоимость машина осна Допускается установка в салоне детского
+                            кресла.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-2" aria-expanded="false">
+                        правила аренды
+                        <span class="sr-only">открыть список правил аренды</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Эксплуатировать автомобиль только в пределах Киева. Выезд за пределы ЛО согласовывается
+                            индивидуально.
+                        </li>
+                        <li class="description__item">
+                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                        </li>
+                        <li class="description__item">
+                            Не передавать управление другому человеку без оформления на него договора аренды. При
+                            желании вы можете бесплатно внести второго водителя в договор аренды.
+                        </li>
+                        <li class="description__item">
+                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                        </li>
+                        <li class="description__item">
+                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                        </li>
+                        <li class="description__item">
+                            Соблюдать правила парковки
+                        </li>
+                        <li class="description__item">
+                            Соблюдать чистоту и не курить в салоне автомобиля.
+                        </li>
+                        <li class="description__item">
+                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с
+                            салоном автомобиля.
+                        </li>
+                        <li class="description__item">
+                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного
+                            осмотра.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-3" aria-expanded="false">
+                        обеспечительный платёж
+                        <span class="sr-only">открыть информацию об обеспечительном платеже</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Оплата наличными денежными средствами;
+                        </li>
+                        <li class="description__item">
+                            Оплата по банковским реквизитам Арендодателя;
+                        </li>
+                        <li class="description__item">
+                            Оплата банковской картой (МИР, VISA International, Mastercard Worldwide, JCB) по терминалу
+                            оплаты;
+                        </li>
+                        <li class="description__item">
+                            Оплата банковской картой по статической ссылке
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-4" aria-expanded="false">
+                        страхование
+                        <span class="sr-only">открыть информацию о страховании</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            При аренде автомобиля в нашей компании Вы получаете полис обязательного страхования по ОСАГО
+                            - БЕСПЛАТНО!
+                        </li>
+                        <li class="description__item">
+                            В дороге любого водителя могут поджидать различные неожиданности. Страхование – лучший
+                            способ обезопасить себя от возможных финансовых потерь и лишних волнений.
+                        </li>
+                        <li class="description__item">
+                            Мы готовы помочь вам расширить действие страховки – по вашему желанию, дополнительно
+                            оформляется страховка от угона и повреждений машины. Полная страховка выгодна тем, что она
+                            освобождает арендатора от покрытия различных убытков и одновременно позволяет брать машину
+                            на прокат без залога.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="conditions__item">
+                    <button class="conditions__button" id="accordion-button-4" aria-expanded="false">
+                        доставка и возврат
+                        <span class="sr-only">открыть информацию о доставке и возврате</span>
+                        <span class="conditions__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="conditions__text description">
+                        <li class="description__item">
+                            Заложите достаточно времени на поездку до пункта возврата. В случае опоздания снимается 5%
+                            от суммы залога.
+                        </li>
+                        <li class="description__item">
+                            Вы получаете машину с полным баком и должны заправить ее до полного бака непосредственно
+                            перед возвратом.
+                        </li>
+                        <li class="description__item">
+                            Сфотографируйте индикатор уровня топлива и пробега. Затем сделайте снимки передней, задней и
+                            боковых частей автомобиля снаружи.
+                        </li>
+                        <li class="description__item">
+                            Заберите все свои вещи. Проверьте багажник, бардачок, дверные карманы, области под сидениями
+                            и карманы на спинках кресел.
+                        </li>
+                        <li class="description__item">
+                            Подойдите на ресепшн, со всеми документами, которые вы получили при аренде автомобиля для
+                            оформления возврата.
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="conditions__block registration">
+                <ul class="registration__list">
+                    <li class="registration__item registration__item_docs">
+                        <span class="registration__title">
+                            документы
+                        </span>
+                        <span class="registration__text">
+                            Паспорт и водительское
+                            удостоверение
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_year">
+                        <span class="registration__title">
+                            возраст
+                        </span>
+                        <span class="registration__text">
+                            от 21 года
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_experience">
+                        <span class="registration__title">
+                            стаж
+                        </span>
+                        <span class="registration__text">
+                            не менее 2 лет
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_terms">
+                        <span class="registration__title">
+                            срок аренды
+                        </span>
+                        <span class="registration__text">
+                            от 1 часа
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_price">
+                        <span class="registration__title">
+                            цена
+                        </span>
+                        <span class="registration__text">
+                            фиксированная
+                        </span>
+                    </li>
+                    <li class="registration__item registration__item_manage">
+                        <span class="registration__title">
+                            управление
+                        </span>
+                        <span class="registration__text">
+                            возможна передача
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+             
+        </main>
+    
+        <footer class="footer">
+
+    <div class="footer__top">
+
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo-footer.svg" alt="логотип" width="141" height="141">
+                </a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a class="menu__link" href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#autopark" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html" data-where="anchor">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer__bottom">
+        <span class="footer__copy">
+            2022 © galeoncar
+        </span>
+        <span class="footer__politics">
+            Политика конфиденциальности
+        </span>
+        <ul class="social">
+            <li class="social__item">
+                <span class="sr-only">перейти в фейсбук</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в инстаграмм</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вконтакте</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вайбер</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+    
+      </div>
+      <script src="js/main.min.js"></script>
+
+</body>
+</html>

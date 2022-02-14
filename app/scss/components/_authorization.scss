@@ -1,0 +1,257 @@
+.authorization {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 80px;
+        row-gap: 25px;
+    }
+
+    &__block {
+        padding: 30px 32px;
+        background-color: #232731;
+        border-radius: 5px;
+        max-width: 380px;
+        height: fit-content;
+    }
+
+    .form {
+        border-bottom: 1px solid rgba($white, 0.15);
+        padding-bottom: 15px;
+
+        &_registration,
+        &_remind {
+            color: $accend;
+        }
+
+        &__signin {
+            display: inline-block;
+            margin-right: 24px;
+
+            @include r(410) {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        &__button {
+            padding: 12px 25px;
+            border: 1px solid rgba($white, 0.15);
+            text-transform: uppercase;
+            color: rgba($white, 0.15);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.5 s;
+
+            &:hover {
+                background-color: rgba($white, 0.15);
+            }
+
+            @include r(410) {
+                width: 100%;
+            }
+
+
+            &_active {
+                border: 1px solid $white;
+                color: $white;
+            }
+
+
+            &_auth {
+                max-width: 222px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            &_send {
+                max-width: 160px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        &__label {
+            display: block;
+            font-size: 18px;
+            line-height: 1.4;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px;
+
+            @include r(410) {
+                font-size: 16px;
+            }
+
+            @include r(320) {
+                font-size: 14px;
+            }
+        }
+
+        &__input {
+            max-width: 320px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: rgba($white, 0.05);
+            box-shadow: inset 0px 1px 3px rgba($black, 0.24);
+            font-size: 16px;
+            color: $white;
+
+            &_name {
+                margin-bottom: 9px;
+            }
+
+            &_password {
+                margin-bottom: 20px;
+            }
+
+            &_registration {
+                margin-bottom: 9px;
+            }
+
+            &_lastname {
+                margin-bottom: 21px;
+            }
+        }
+
+        &__checkbox {
+            display: none;
+
+            &-label {
+                position: relative;
+                padding-left: 25px;
+                text-align: justify;
+                margin-bottom: 20px;
+
+                &::before {
+                    @include pseudo;
+                    width: 14px;
+                    height: 14px;
+                    background-color: $accend;
+                    border-radius: 3px;
+                    top: 5px;
+                    left: 0;
+                }
+
+                &::after {
+                    @include pseudo;
+                    width: 15px;
+                    height: 17px;
+                    background-image: url('../../images/icons/checkmark.svg');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    top: 3px;
+                    left: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                    transition: opacity 0.5s ease-in-out;
+                }
+
+                &_confirm {
+                    font-size: 14px;
+                }
+            }
+
+            &:checked+.form__checkbox-label::after {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .social {
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba($white, 0.15);
+
+        &__text {
+            font-size: 18px;
+            line-height: 1.4;
+            letter-spacing: 0.05em;
+
+            @include r(410) {
+                font-size: 16px;
+            }
+
+            @include r(320) {
+                font-size: 14px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding-top: 8px;
+            position: relative;
+
+            &::after {
+                @include pseudo;
+                height: 2px;
+                width: 56px;
+                background-color: $white;
+                bottom: -16px;
+            }
+        }
+
+        &__item {
+            border: 1px dashed $accend;
+            transition: border 0.5s;
+
+            &:hover {
+                border: 1px solid $accend;
+            }
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__remind,
+    &__auth {
+        text-align: center;
+        color: $accend;
+        padding-top: 21px;
+        font-size: 18px;
+
+        @include r(410) {
+            font-size: 16px;
+        }
+
+        @include r(320) {
+            font-size: 14px;
+        }
+    }
+
+    &__politics {
+        padding: 5px 0;
+
+        &-text {
+            text-align: justify;
+
+            p:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__text {
+        color: #696969;
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        text-align: justify;
+
+        @include r(410) {
+            font-size: 16px;
+        }
+
+        @include r(320) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,300 @@
+.contact {
+    position: relative;
+
+    .map {
+        &__iframe {
+            width: 100%;
+            opacity: 0.5;
+        }
+    }
+
+    .modal {
+        max-width: 604px;
+        min-height: 439px;
+        background-color: #232731;
+        padding: 26px 15px 20px 46px;
+        border-radius: 6px;
+        position: absolute;
+        top: 67px;
+        right: 0;
+        border-radius: 20px;
+        border: 1px solid $accend;
+
+        @include r(580) {
+            padding: 20px 15px 15px 30px;
+        }
+
+        @include r(410) {
+            padding: 16px 15px 15px 23px;
+            min-height: 321px;
+        }
+
+        &.close {
+            display: none;
+        }
+
+        &__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+
+            @include r(410) {
+                font-size: 18px;
+                margin-bottom: 6px;
+            }
+        }
+
+        &__close {
+            width: 24px;
+            height: 24px;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                width: 16px;
+                height: 2px;
+                background-color: $white;
+                top: 10px;
+                right: 3px;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                @include pseudo;
+                width: 16px;
+                height: 2px;
+                background-color: $white;
+                top: 10px;
+                right: 3px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &__text {
+            display: block;
+            font-size: 16px;
+            line-height: 1.6;
+            letter-spacing: 0.05em;
+            margin-bottom: 14px;
+
+            @include r(410) {
+                margin-bottom: 11px;
+                font-size: 14px;
+            }
+        }
+
+        .address {
+            padding: 15px 0 28px;
+            border-top: 1px solid rgba($white, 0.15);
+            border-bottom: 1px solid rgba($white, 0.15);
+
+            @include r(410) {
+                padding: 17px 0 14px;
+            }
+
+            &__item {
+                padding-left: 42px;
+                color: #CFCFCF;
+                font-size: 14px;
+                line-height: 1.6;
+                position: relative;
+
+                &::before {
+                    @include pseudo;
+                    width: 30px;
+                    height: 30px;
+                    left: 0;
+                    top: 0;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    @include r(410) {
+                        width: 19px;
+                        height: 19px;
+                        top: 3px;
+                    }
+                }
+
+                @include r(410) {
+                    padding-left: 25px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 44px;
+
+                    @include r(410) {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                &_location {
+                    &::before {
+                        background-image: url('../../images/icons/location.svg');
+                    }
+                }
+
+                &_email {
+                    &::before {
+                        background-image: url('../../images/icons/email.svg');
+                        width: 26px;
+                        height: 26px;
+
+                        @include r(410) {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                }
+
+                &-location {
+                    display: block;
+                    color: $white;
+                }
+
+                &-email {
+                    display: block;
+                    color: $white;
+                }
+            }
+        }
+
+        .order {
+            padding: 24px 0 41px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include r(410) {
+                padding: 20px 0 27px;
+            }
+
+            @include r(375) {
+                flex-wrap: wrap;
+                padding: 13px 0;
+            }
+
+            &__button {
+                display: block;
+                cursor: pointer;
+                margin-right: 63px;
+
+                @include r(510) {
+                    font-size: 14px;
+                    margin-right: 16px;
+                }
+                @include r(375) {
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            &__connect {
+                line-height: 1.2;
+            }
+
+            &__phone {
+                font-weight: 900;
+                font-size: 24px;
+
+                @include r(510) {
+                    font-size: 20px;
+                }
+
+                @include r(410) {
+                    font-size: 16px;
+                }
+            }
+
+            &__text {
+                color: #CFCFCF;
+                font-size: 14px;
+                line-height: 1.2;
+                display: block;
+
+                @include r(410) {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-text {
+                @include r(410) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+
+            &__item {
+                &:not(:last-child) {
+                    padding: 10px 5px;
+
+                    @include r(1280) {
+                        padding: 10px 2px;
+                    }
+
+                    @include r(410) {
+                        padding: 5px 2px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    padding: 10px 0 10px 5px;
+
+                    @include r(1280) {
+                        padding: 10px 0 10px 2px;
+                    }
+
+                    @include r(410) {
+                        padding: 5px 0 5px 2px;
+                    }
+                }
+
+            }
+
+            &__image {
+                width: 25px;
+                height: 25px;
+                fill: $white;
+                transition: fill 0.5s ease-in-out;
+
+                &:hover {
+                    fill: $accend;
+                }
+
+                @include r(410) {
+                    width: 19px;
+                    height: 19px;
+                }
+
+                @include r(410) {}
+            }
+
+            @include r(410) {
+                margin-left: auto;
+            }
+        }
+    }
+
+
+
+}

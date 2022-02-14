@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда автомобиля без водителя</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="header">
+    <div class="container">
+        <nav class="menu">
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Мобильное меню</span>
+            </button>
+            <ul class="menu__list burger__menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в эпстор</span>
+                    <a class="menu__link" href="#">
+                        <svg class="menu__image payment__image">
+                            <use xlink:href="images/sprite.svg#appstore"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в гуглплей</span>
+                    <a class="menu__link" href="#">
+                        <img class="menu__image payment__image" src="../../images/icons/googleplay.svg" alt="гуглплей">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="291" height="91">
+                </a>
+            </div>
+            <div class="menu__inner">
+
+                <div class="menu__top">
+
+                    <ul class="menu__list menu__list_hidden">
+                        <li class="menu__item active">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="autopark.html"  data-where="anchor">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#rent"  data-where="anchor">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="business.html">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="authorization.html">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__list social">
+                        <li class="social__item">
+                            <span class="sr-only">перейти в фейсбук</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в инстаграмм</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вконтакте</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вайбер</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__bottom">
+                    <a class="menu__phone" href="tel:389958883094">(095) 888-30-94</a>
+                    <ul class="menu__list payment">
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в эпстор</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в гуглплей</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+        
+        <main class="main">         
+                  
+          <section class="nodriver section">
+    <h2 class="nodriver__title title">
+        аренда автомобиля
+    </h2>
+    <h3 class="nodriver__subtitle">
+        без водителя
+    </h3>
+
+    <div class="nodriver__inner" style="background-image: url(../../images/bg/nodriver-bg.jpg)">
+        <div class="nodriver__image">
+            <img class="nodriver__img" src="../../images/nodriver.jpg" alt="аренда автомобиля без водителя" width="410"
+                height="200">
+        </div>
+        <div class="registration">
+            <ul class="registration__list">
+                <li class="registration__item registration__item_docs">
+                    <span class="registration__title">
+                        документы
+                    </span>
+                    <span class="registration__text">
+                        Паспорт и водительское
+                        удостоверение
+                    </span>
+                </li>
+                <li class="registration__item registration__item_year">
+                    <span class="registration__title">
+                        аренда
+                    </span>
+                    <span class="registration__text">
+                        от 21 года
+                    </span>
+                </li>
+                <li class="registration__item registration__item_experience">
+                    <span class="registration__title">
+                        стаж
+                    </span>
+                    <span class="registration__text">
+                        не менее 2 лет
+                    </span>
+                </li>
+                <li class="registration__item registration__item_terms">
+                    <span class="registration__title">
+                        срок аренды
+                    </span>
+                    <span class="registration__text">
+                        от 1 часа
+                    </span>
+                </li>
+                <li class="registration__item registration__item_price">
+                    <span class="registration__title">
+                        цена
+                    </span>
+                    <span class="registration__text">
+                        фиксированная
+                    </span>
+                </li>
+                <li class="registration__item registration__item_manage">
+                    <span class="registration__title">
+                        управление
+                    </span>
+                    <span class="registration__text">
+                        возможна передача
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+          <section class="autopark section" id="autopark">
+    <h2 class="autopark__subtitle subtitle">
+        автопарк
+    </h2>
+
+    <div class="autopark__top">
+        <h3 class="autopark__title title">
+            Премиум
+        </h3>
+        <h3 class="autopark__title title">
+            Бизнес
+        </h3>
+        <h3 class="autopark__title title">
+            Спорт
+        </h3>
+    </div>
+
+    <span class="sr-only">галлерея машин</span>
+    <div class="autopark__slider swiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+            <div class="swiper-slide">
+                <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                    height="379">
+                <a class="autopark__button button" href="#">Заказать машину</a>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+</section>
+            
+        </main>
+    
+        <footer class="footer">
+
+    <div class="footer__top">
+
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="../../images/logo-footer.svg" alt="логотип" width="141" height="141">
+                </a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a class="menu__link" href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#autopark" data-where="anchor">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html" data-where="anchor">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer__bottom">
+        <span class="footer__copy">
+            2022 © galeoncar
+        </span>
+        <span class="footer__politics">
+            Политика конфиденциальности
+        </span>
+        <ul class="social">
+            <li class="social__item">
+                <span class="sr-only">перейти в фейсбук</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в инстаграмм</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вконтакте</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вайбер</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+    
+      </div>
+      <script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+.requisites {
+    text-align: center;
+
+    &__title {
+        font-weight: 900;
+        font-size: 64px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.3;
+        text-shadow: 2px 0 4px $accend, 0 2px 3px $accend, -1px 0 1px $accend, 0 -1px 1px $accend;
+        color: $black;
+        margin-bottom: 65px;
+
+        @include r(1000) {
+            margin-bottom: 60px;
+            font-size: 48px;
+        }
+
+        @include r(768) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        @include r(580) {
+            margin-bottom: 42px;
+        }
+
+        @include r(320) {
+            font-size: 24px;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        margin-bottom: 80px;
+
+        @include r(1000) {
+            margin-bottom: 60px;
+            font-size: 30px;
+        }
+
+        @include r(768) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        column-count: 4;
+        line-height: 1.2;
+
+        @include r(1280) {
+            column-count: 3;
+        }
+
+        @include r(1000) {
+            column-count: 2;
+        }
+
+        @include r(580) {
+            column-count: unset;
+        }
+
+    }
+
+    &__item {
+        margin-bottom: 24px;
+        font-size: 18px;
+        text-align-last: left;
+
+        @include r(768) {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        @include r(580) {
+            font-size: 14px;
+        }
+
+        &-title {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+
+            @include r(768) {
+                margin-bottom: 5px;
+            }
+
+            @include r(580) {
+                display: inline-block;
+            }
+            @include r(410) {
+                font-size: 13px;
+                display: block;
+            }
+        }
+    }
+}
