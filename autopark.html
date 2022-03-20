@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeoncar - аренда премиум Авто</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+    <div class="container">
+        <nav class="menu">
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Мобильное меню</span>
+            </button>
+            <ul class="menu__list burger__menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в эпстор</span>
+                    <a class="menu__link" href="#">
+                        <svg class="menu__image payment__image">
+                            <use xlink:href="images/sprite.svg#appstore"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в гуглплей</span>
+                    <a class="menu__link" href="#">
+                        <img class="menu__image payment__image" src="../../images/icons/googleplay.svg" alt="гуглплей">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="291" height="91">
+                </a>
+            </div>
+            <div class="menu__inner">
+
+                <div class="menu__top">
+
+                    <ul class="menu__list menu__list_hidden">
+                        <li class="menu__item active">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="autopark.html">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="condition.html">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="business.html">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="authorization.html">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__list social">
+                        <li class="social__item">
+                            <span class="sr-only">перейти в фейсбук</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в инстаграмм</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вконтакте</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вайбер</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__bottom">
+                    <a class="menu__phone" href="tel:389958883094">(095) 888-30-94</a>
+                    <ul class="menu__list payment">
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в эпстор</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в гуглплей</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+    
+    <main class="main">
+        <section class="autopark-hero " style="background-image: url('../../images/autopark/bg.jpg');">
+    <h1 class="autopark-hero__title">
+        наш
+        <span class="autopark-hero__subtitle">
+            Автопарк
+        </span>
+    </h1>
+    <div class="container">
+        <div class="autopark-hero__inner">
+
+            <div class="address-card">
+                <div class="address-card__block">
+                    <h2 class="address-card__title">
+                        автомобиль по подписке с полным обслуживанием
+                    </h2>
+                </div>
+                <div class="address-card__block">
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item address__item_location">
+                                <span>Наш адрес:</span>
+                                г. Киев, улица Победы, 20
+                            </li>
+                            <li class="address__item address__item_time">
+                                <span>Время работы:</span>
+                                круглосуточно
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <button class="address__button button">заказать машину</button>
+            </div>            
+
+            <div class="autopark-hero__block">
+                <img class="autopark-hero__image" src="../../images/autopark/ellipse.png" alt="эллипс меню">
+                <ul class="autopark-menu">
+                    <li class="autopark-menu__item autopark-menu__item_premium">
+                        Премиум <a class="autopark-menu__link" href="#premium" data-link="autopark"><span class="autopark-menu__circle"></span></a>
+                    </li>
+                    <li class="autopark-menu__item autopark-menu__item_business">
+                        Бизнес <a class="autopark-menu__link" href="#business" data-link="autopark"><span class="autopark-menu__circle"></span></a>
+                    </li>
+                    <li class="autopark-menu__item autopark-menu__item_sport">
+                        Спорт <a class="autopark-menu__link" href="#sport" data-link="autopark"><span class="autopark-menu__circle"></span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section class="autopark-blocks ">
+    <div class="autopark-blocks_premium section">
+        <h2 class="autopark-blocks__title title" id="premium">
+            премиум
+        </h2>
+
+        <h3 class="autopark-blocks__subtitle subtitle">
+            автопарк
+        </h3>
+
+        <span class="sr-only">галлерея машин</span>
+        <div class="autopark__slider swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+    </div>
+
+    <div class="autopark-blocks_business section">
+        <h2 class="autopark-blocks__title title" id="business">
+            бизнес
+        </h2>
+
+        <h3 class="autopark-blocks__subtitle subtitle">
+            автопарк
+        </h3>
+
+        <span class="sr-only">галлерея машин</span>
+        <div class="autopark__slider swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+    </div>
+
+    <div class="autopark-blocks_sport section">
+        <h2 class="autopark-blocks__title title" id="sport">
+            спорт
+        </h2>
+
+        <h3 class="autopark-blocks__subtitle subtitle">
+            автопарк
+        </h3>
+
+        <span class="sr-only">галлерея машин</span>
+        <div class="autopark__slider swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/1.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/2.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+                <div class="swiper-slide">
+                    <img class="autopark__image" src="../../images/autopark/3.jpg" alt="галлерея машин" width="660"
+                        height="379">
+                    <button class="autopark__button button" type="button" data-order>Заказать машину</button>
+                </div>
+    
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <button class="modal__close" data-close type="button">&times;</button>
+                    <h4 class="modal__title">Мы свяжемся с вами как можно быстрее!</h4>
+                    <input class="modal__input" placeholder="Ваше имя" name="name" type="text" required>
+                    <input class="modal__input" placeholder="Ваш номер телефона" name="phone" type="phone" required>
+                    <button class="modal__button button" type="submit">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+    </main>
+
+    <footer class="footer">
+
+    <div class="footer__top">
+
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__img" src="../../images/logo-footer.svg" alt="логотип" width="141" height="141">
+                </a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer__bottom">
+        <span class="footer__copy">
+            2022 © galeoncar
+        </span>
+        <span class="footer__politics">
+            Политика конфиденциальности
+        </span>
+        <ul class="social">
+            <li class="social__item">
+                <span class="sr-only">перейти в фейсбук</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в инстаграмм</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вконтакте</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вайбер</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

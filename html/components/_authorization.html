@@ -1,0 +1,168 @@
+<section class="authorization section">
+
+    <div class="authorization__wrapper">
+
+        <div class="authorization__block">
+            <form class="form" action="#">
+                <div class="form__signin">
+                    <button class="form__button form__button_active" type="submit">
+                        Вход
+                    </button>
+                </div>
+                <button class="form__button" type="submit">
+                    Регистрация
+                </button>
+                <label class="form__label" for="name">
+                    Логин*
+                </label>
+                <input class="form__input form__input_name" type="text" name="name" id="name" required>
+                <label class="form__label" for="password">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_password" type="password" name="password" id="password" required>
+                <input class="form__checkbox" type="checkbox" id="checkbox" name="checkbox-remember">
+                <label class="form__label form__checkbox-label" for="checkbox">Запомнить меня на этом компьютере</label>
+                <button class="form__button form__button_active form__button_auth" type="submit">
+                    Авторизоваться
+                </button>
+            </form>
+
+            <div class="social">
+                <span class="social__text">
+                    Войти с помощью
+                </span>
+                <ul class="social__list">
+                    <li class="social__item social__item_gmail">
+                        <span class="sr-only">Авторизоваться с помощью gmail</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/gmail.svg"
+                                alt="Авторизоваться с помощью gmail" width="35" height="35">
+                        </a>
+                    </li>
+                    <li class="social__item social__item_vk">
+                        <span class="sr-only">Авторизоваться с помощью vkontakte</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/vkontakte.svg"
+                                alt="Авторизоваться с помощью vkontakte" width="35" height="35">
+                        </a>
+                    </li>
+                    <li class="social__item social__item_fb">
+                        <span class="sr-only">Авторизоваться с помощью facebook</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/facebook.svg"
+                                alt="Авторизоваться с помощью facebook" width="35" height="35">
+                        </a>
+                    </li>
+                </ul>
+                <span class="social__text">
+                    Вы можете войти через аккаунт в социальных сетях
+                </span>
+            </div>
+            <div class="authorization__remind">
+                <a class="authorization__remind-link" href="#">Забыли пароль?</a>
+            </div>
+        </div>
+
+        <div class="authorization__block">
+            <form class="form form_registration" action="#">
+                <div class="form__signin">
+                    <button class="form__button form__button" type="submit">
+                        Вход
+                    </button>
+                </div>
+                <button class="form__button form__button_active" type="submit">
+                    Регистрация
+                </button>
+
+                <label class="form__label" for="name-registration">
+                    Логин*
+                </label>
+                <input class="form__input form__input_registration" type="text" name="name" id="name-registration"
+                    required>
+
+                <label class="form__label" for="password-registration">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_registration" type="password" name="password"
+                    id="password-registration" required>
+
+                <label class="form__label" for="confirm-password">
+                    Подтверждение пароля*
+                </label>
+                <input class="form__input form__input_registration" type="password" name="confirm-password"
+                    id="confirm-password" required>
+
+                <label class="form__label" for="email">
+                    Адрес e-mail*
+                </label>
+                <input class="form__input form__input_registration" type="email" name="email" id="email" required>
+
+                <label class="form__label" for="firstname">
+                    Имя
+                </label>
+                <input class="form__input form__input_registration" type="text" name="firstname" id="firstname">
+
+                <label class="form__label" for="lastname">
+                    Фамилия
+                </label>
+                <input class="form__input form__input_lastname" type="text" name="lastname" id="lastname">
+
+                <input class="form__checkbox" type="checkbox" name="checkbox-confirm" id="checkbox-confirm">
+                <label class="form__label form__checkbox-label form__checkbox-label_confirm"
+                    for="checkbox-confirm">Согласен на обработку личных данных**</label>
+
+                <input class="form__checkbox" type="checkbox" name="checkbox-agree" id="checkbox-agree">
+                <label class="form__label form__checkbox-label form__checkbox-label_confirm" for="checkbox-agree">Я хочу
+                    учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и
+                    акциях</label>
+
+            </form>
+
+            <div class="authorization__politics">
+                <div class="authorization__politics-text">
+                    <p>Пароль должен быть не менее 6 символов длиной. Символом “*” отмечены обязательные для заполнения
+                        поля.
+                    </p>
+                    <p> **Настоящим в соответствии с законом Украины № 2297-VI “О защите персональных данных” от
+                        01.06.2010 Вы подтверждаете свое согласие на обработку персональных данных. С политикой можно
+                        ознакомиться по <a class="authorization__politics-link"
+                            href="https://zakon.rada.gov.ua/laws/main/2297-17#Text">ссылке.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="authorization__block">
+            <div class="authorization__text">
+                <p>
+                    Если вы забыли пароль, введите логин или E-Mail. Контрольная строка для смены пароля, а также ваши
+                    регистрационные данные, будут высланы вам по E-Mail.
+                </p>
+            </div>
+
+            <form class="form form_remind" action="#">
+                <label class="form__label" for="remind-name">
+                    Логин*
+                </label>
+                <input class="form__input form__input_name" type="text" name="name" id="remind-name" required>
+                <label class="form__label" for="remind-password">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_password" type="password" name="password" id="remind-password"
+                    required>
+                <button class="form__button form__button_active form__button_send" type="submit">
+                    Выслать
+                </button>
+            </form>
+
+            <div class="authorization__auth">
+                <a class="authorization__auth-link" href="#">
+                    Авторизация
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>

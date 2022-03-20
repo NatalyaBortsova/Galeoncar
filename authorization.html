@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="header">
+    <div class="container">
+        <nav class="menu">
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Мобильное меню</span>
+            </button>
+            <ul class="menu__list burger__menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в эпстор</span>
+                    <a class="menu__link" href="#">
+                        <svg class="menu__image payment__image">
+                            <use xlink:href="images/sprite.svg#appstore"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <span class="sr-only">Перейти в гуглплей</span>
+                    <a class="menu__link" href="#">
+                        <img class="menu__image payment__image" src="../../images/icons/googleplay.svg" alt="гуглплей">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="291" height="91">
+                </a>
+            </div>
+            <div class="menu__inner">
+
+                <div class="menu__top">
+
+                    <ul class="menu__list menu__list_hidden">
+                        <li class="menu__item active">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="autopark.html">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="condition.html">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="business.html">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="authorization.html">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__list social">
+                        <li class="social__item">
+                            <span class="sr-only">перейти в фейсбук</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в инстаграмм</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вконтакте</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <span class="sr-only">перейти в вайбер</span>
+                            <a class="social__link" href="#">
+                                <svg class="social__image">
+                                    <use xlink:href="images/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__bottom">
+                    <a class="menu__phone" href="tel:389958883094">(095) 888-30-94</a>
+                    <ul class="menu__list payment">
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в эпстор</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <span class="sr-only">Перейти в гуглплей</span>
+                            <a class="payment__link" href="#">
+                                <svg class="payment__image">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+        
+        <main class="main">
+        
+            <section class="authorization section">
+
+    <div class="authorization__wrapper">
+
+        <div class="authorization__block">
+            <form class="form" action="#">
+                <div class="form__signin">
+                    <button class="form__button form__button_active" type="submit">
+                        Вход
+                    </button>
+                </div>
+                <button class="form__button" type="submit">
+                    Регистрация
+                </button>
+                <label class="form__label" for="name">
+                    Логин*
+                </label>
+                <input class="form__input form__input_name" type="text" name="name" id="name" required>
+                <label class="form__label" for="password">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_password" type="password" name="password" id="password" required>
+                <input class="form__checkbox" type="checkbox" id="checkbox" name="checkbox-remember">
+                <label class="form__label form__checkbox-label" for="checkbox">Запомнить меня на этом компьютере</label>
+                <button class="form__button form__button_active form__button_auth" type="submit">
+                    Авторизоваться
+                </button>
+            </form>
+
+            <div class="social">
+                <span class="social__text">
+                    Войти с помощью
+                </span>
+                <ul class="social__list">
+                    <li class="social__item social__item_gmail">
+                        <span class="sr-only">Авторизоваться с помощью gmail</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/gmail.svg"
+                                alt="Авторизоваться с помощью gmail" width="35" height="35">
+                        </a>
+                    </li>
+                    <li class="social__item social__item_vk">
+                        <span class="sr-only">Авторизоваться с помощью vkontakte</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/vkontakte.svg"
+                                alt="Авторизоваться с помощью vkontakte" width="35" height="35">
+                        </a>
+                    </li>
+                    <li class="social__item social__item_fb">
+                        <span class="sr-only">Авторизоваться с помощью facebook</span>
+                        <a class="social__link" href="#">
+                            <img class="social__image" src="../../images/icons/facebook.svg"
+                                alt="Авторизоваться с помощью facebook" width="35" height="35">
+                        </a>
+                    </li>
+                </ul>
+                <span class="social__text">
+                    Вы можете войти через аккаунт в социальных сетях
+                </span>
+            </div>
+            <div class="authorization__remind">
+                <a class="authorization__remind-link" href="#">Забыли пароль?</a>
+            </div>
+        </div>
+
+        <div class="authorization__block">
+            <form class="form form_registration" action="#">
+                <div class="form__signin">
+                    <button class="form__button form__button" type="submit">
+                        Вход
+                    </button>
+                </div>
+                <button class="form__button form__button_active" type="submit">
+                    Регистрация
+                </button>
+
+                <label class="form__label" for="name-registration">
+                    Логин*
+                </label>
+                <input class="form__input form__input_registration" type="text" name="name" id="name-registration"
+                    required>
+
+                <label class="form__label" for="password-registration">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_registration" type="password" name="password"
+                    id="password-registration" required>
+
+                <label class="form__label" for="confirm-password">
+                    Подтверждение пароля*
+                </label>
+                <input class="form__input form__input_registration" type="password" name="confirm-password"
+                    id="confirm-password" required>
+
+                <label class="form__label" for="email">
+                    Адрес e-mail*
+                </label>
+                <input class="form__input form__input_registration" type="email" name="email" id="email" required>
+
+                <label class="form__label" for="firstname">
+                    Имя
+                </label>
+                <input class="form__input form__input_registration" type="text" name="firstname" id="firstname">
+
+                <label class="form__label" for="lastname">
+                    Фамилия
+                </label>
+                <input class="form__input form__input_lastname" type="text" name="lastname" id="lastname">
+
+                <input class="form__checkbox" type="checkbox" name="checkbox-confirm" id="checkbox-confirm">
+                <label class="form__label form__checkbox-label form__checkbox-label_confirm"
+                    for="checkbox-confirm">Согласен на обработку личных данных**</label>
+
+                <input class="form__checkbox" type="checkbox" name="checkbox-agree" id="checkbox-agree">
+                <label class="form__label form__checkbox-label form__checkbox-label_confirm" for="checkbox-agree">Я хочу
+                    учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и
+                    акциях</label>
+
+            </form>
+
+            <div class="authorization__politics">
+                <div class="authorization__politics-text">
+                    <p>Пароль должен быть не менее 6 символов длиной. Символом “*” отмечены обязательные для заполнения
+                        поля.
+                    </p>
+                    <p> **Настоящим в соответствии с законом Украины № 2297-VI “О защите персональных данных” от
+                        01.06.2010 Вы подтверждаете свое согласие на обработку персональных данных. С политикой можно
+                        ознакомиться по <a class="authorization__politics-link"
+                            href="https://zakon.rada.gov.ua/laws/main/2297-17#Text">ссылке.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="authorization__block">
+            <div class="authorization__text">
+                <p>
+                    Если вы забыли пароль, введите логин или E-Mail. Контрольная строка для смены пароля, а также ваши
+                    регистрационные данные, будут высланы вам по E-Mail.
+                </p>
+            </div>
+
+            <form class="form form_remind" action="#">
+                <label class="form__label" for="remind-name">
+                    Логин*
+                </label>
+                <input class="form__input form__input_name" type="text" name="name" id="remind-name" required>
+                <label class="form__label" for="remind-password">
+                    Пароль*
+                </label>
+                <input class="form__input form__input_password" type="password" name="password" id="remind-password"
+                    required>
+                <button class="form__button form__button_active form__button_send" type="submit">
+                    Выслать
+                </button>
+            </form>
+
+            <div class="authorization__auth">
+                <a class="authorization__auth-link" href="#">
+                    Авторизация
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+        </main>
+    
+        <footer class="footer">
+
+    <div class="footer__top">
+
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__img" src="../../images/logo-footer.svg" alt="логотип" width="141" height="141">
+                </a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a class="menu__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autopark.html">
+                        Автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="condition.html">
+                        Аренда
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="business.html">
+                        Для бизнеса
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="authorization.html">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer__bottom">
+        <span class="footer__copy">
+            2022 © galeoncar
+        </span>
+        <span class="footer__politics">
+            Политика конфиденциальности
+        </span>
+        <ul class="social">
+            <li class="social__item">
+                <span class="sr-only">перейти в фейсбук</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в инстаграмм</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вконтакте</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <span class="sr-only">перейти в вайбер</span>
+                <a class="social__link" href="#">
+                    <svg class="social__image">
+                        <use xlink:href="images/sprite.svg#viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+    
+      </div>
+      <script src="js/main.min.js"></script>
+
+</body>
+</html>
